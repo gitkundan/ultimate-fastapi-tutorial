@@ -43,7 +43,7 @@ def fetch_recipe(*, recipe_id: int) -> dict:
     """
     Fetch a single recipe by ID
     """
-
+    print(type(recipe_id))  # ADDED
     result = [recipe for recipe in RECIPES if recipe["id"] == recipe_id]
     if result:
         return result[0]
@@ -56,4 +56,5 @@ if __name__ == "__main__":
     # Use this for debugging purposes only
     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8001, log_level="debug")
+    # uvicorn.run(app, host="0.0.0.0", port=8001, log_level="debug")
+    uvicorn.run(app, host="0.0.0.0", port=8001)
