@@ -5,4 +5,5 @@
 # (4) cd ..
 # (5) pip install -r requirements.txt
 # (6) uvicorn main:app --reload
+# Start here : https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-4-pydantic-schemas/
 fastapi[all]
